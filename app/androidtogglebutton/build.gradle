@@ -4,14 +4,14 @@ plugins {
 }
 
 android {
-    namespace 'com.example.androidtoggle'
+    namespace 'com.example.androidtogglesample'
     compileSdkVersion 34
 
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 33
         versionCode 1
-        versionName "2.0"
+        versionName "1.0.0"
     }
 
     compileOptions {
@@ -39,7 +39,7 @@ publishing {
             from components.findByName('release')
             groupId = 'com.github.thakkarnetram'
             artifactId = 'togglebutton'
-            version = '2.0'
+            version = '1.0.0'
         }
     }
 }
