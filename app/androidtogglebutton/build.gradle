@@ -1,35 +1,51 @@
 plugins {
-    alias(libs.plugins.android.library)
+    id 'com.android.library'
+    id 'maven-publish'
 }
 
 android {
-    namespace 'com.example.androidtogglebutton'
-    compileSdk 34
+    namespace 'com.example.androidtoggle'
+    compileSdkVersion 34
 
     defaultConfig {
-        minSdk 24
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "2.0"
+    }
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles "consumer-rules.pro"
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar() // Adds a sources JAR to the publication
+        }
+    }
+}
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            from components.findByName('release')
+            groupId = 'com.github.thakkarnetram'
+            artifactId = 'togglebutton'
+            version = '2.0'
+        }
     }
 }
 
 dependencies {
-
-    implementation libs.appcompat
-    implementation libs.material
-    testImplementation libs.junit
-    androidTestImplementation libs.ext.junit
-    androidTestImplementation libs.espresso.core
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.10"
 }
