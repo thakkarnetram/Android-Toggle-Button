@@ -16,6 +16,7 @@ import android.widget.TextView;
 import androidx.core.content.ContextCompat;
 
 import com.example.androidtogglebutton.util.ToggleSwitchButton;
+import com.example.androidtogglesample.R;
 
 import java.util.ArrayList;
 

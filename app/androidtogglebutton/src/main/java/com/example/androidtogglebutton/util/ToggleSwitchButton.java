@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.androidtogglebutton.R;
+import com.example.androidtogglesample.R;
 
 
 /**
