@@ -11,7 +11,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 33
         versionCode 1
-        versionName "1.0.0"
+        versionName "2.0.0"
     }
 
     compileOptions {
@@ -39,7 +39,7 @@ publishing {
             from components.findByName('release')
             groupId = 'com.github.thakkarnetram'
             artifactId = 'togglebutton'
-            version = '1.0.0'
+            version = '2.0.0'
         }
     }
 }
