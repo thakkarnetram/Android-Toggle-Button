@@ -61,6 +61,7 @@ publishing {
             groupId = 'com.github.thakkarnetram'
             artifactId = 'Android-Toggle-Button'
             version = '3.4.1'
+            artifact(file("build/outputs/aar/androidtogglebutton-release.aar"))
             pom {
                 description = 'Android Toggle Button Library'
             }
