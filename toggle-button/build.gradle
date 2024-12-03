@@ -9,6 +9,7 @@ buildscript {
     dependencies {
         classpath libs.gradle
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
     }
 }
 
@@ -16,6 +17,9 @@ plugins {
     id 'com.android.library'
     id 'maven-publish'
 }
+
+group="thakkar.netram"
+version="3.5.0"
 
 android {
     namespace 'com.example.toggle_button'
