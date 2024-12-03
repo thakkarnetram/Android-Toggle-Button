@@ -1,9 +1,9 @@
-package com.example.androidtogglebutton;
+package com.example.toggle_button;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
-import com.example.androidtogglebutton.util.ToggleSwitchButton;
+import com.example.toggle_button.util.ToggleSwitchButton;
 
 
 /**

@@ -24,4 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "AndroidToggle"
 include ':app'
-include ':app:androidtogglebutton'
+include ':toggle-button'

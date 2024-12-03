@@ -1,4 +1,4 @@
-package com.example.androidtogglebutton;
+package com.example.toggle_button;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -15,8 +15,8 @@ import android.widget.TextView;
 
 import androidx.core.content.ContextCompat;
 
-import com.example.androidtogglebutton.util.ToggleSwitchButton;
-import com.example.androidtogglesample.R;
+
+import com.example.toggle_button.util.ToggleSwitchButton;
 
 import java.util.ArrayList;
 

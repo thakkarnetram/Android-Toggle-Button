@@ -2,15 +2,12 @@ package com.example.androidtoggle;
 
 import android.os.Bundle;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-import com.example.androidtogglebutton.ToggleSwitch;
+import com.example.toggle_button.ToggleSwitch;
 
 import java.util.ArrayList;
+
 
 public class MainActivity extends AppCompatActivity {
 

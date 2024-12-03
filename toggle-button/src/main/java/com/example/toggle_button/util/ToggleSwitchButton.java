@@ -1,11 +1,11 @@
-package com.example.androidtogglebutton.util;
+package com.example.toggle_button.util;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.androidtogglesample.R;
+import com.example.toggle_button.R;
 
 
 /**

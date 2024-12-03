@@ -1,4 +1,4 @@
-package com.example.androidtogglebutton;
+package com.example.toggle_button;
 
 import org.junit.Test;
 

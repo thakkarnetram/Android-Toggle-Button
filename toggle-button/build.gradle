@@ -18,14 +18,14 @@ plugins {
 }
 
 android {
-    namespace 'com.example.androidtogglesample'
+    namespace 'com.example.toggle_button'
     compileSdkVersion 34
 
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 33
         versionCode 1
-        versionName "3.4.1"
+        versionName "3.5.0"
     }
 
     compileOptions {
@@ -60,8 +60,7 @@ publishing {
             from components.findByName('release')
             groupId = 'com.github.thakkarnetram'
             artifactId = 'Android-Toggle-Button'
-            version = '3.4.1'
-            artifact(file("build/outputs/aar/androidtogglebutton-release.aar"))
+            version = '3.5.0'
             pom {
                 description = 'Android Toggle Button Library'
             }
